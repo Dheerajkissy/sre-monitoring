@@ -1,0 +1,20 @@
+groups:
+- name: example
+  rules:
+  - alert: HighCpuUsage
+    expr: 100 - (avg by (instance) (rate(node_cpu_seconds_total{mode="idle"}[5m])) * 100) > 80
+    for: 5m
+    labels:
+      severity: warning
+    annotations:
+      summary: "High CPU usage on {{ $labels.instance }}"
+      description: "CPU usage is above 80% for 5 minutes on {{ $labels.instance }}."
+
+  - alert: LowDiskSpace
+    expr: node_filesystem_free_bytes{mountpoint="/"} / node_filesystem_size_bytes{mountpoint="/"} * 100 < 20
+    for: 10m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Low disk space on {{ $labels.instance }}"
+      description: "Less than 20% disk space remaining on {{ $labels.instance }} for 10 minutes."
