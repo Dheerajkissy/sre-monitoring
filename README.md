@@ -1,1 +1,55 @@
 # SRE Monitoring Project
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Week 2: Monitoring Setup
+- Installed Prometheus and Node Exporter for metrics collection.
+- Installed Grafana for visualization with a Node Exporter dashboard.
