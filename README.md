@@ -1,58 +1,12 @@
 # SRE Monitoring Project
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Week 1:Getting started
+- Installed Kali linux
 
 ## Week 2: Monitoring Setup
 - Installed Prometheus and Node Exporter for metrics collection.
 - Installed Grafana for visualization with a Node Exporter dashboard.
+- 
 ## Week 3: Alerting Setup
 - Defined alerting rules for high CPU (>80%) and low disk space (<20%) in Prometheus
 - Installed and configured Alertmanager for alert notifications
@@ -83,5 +37,3 @@
 
 ### Deployment Status:
 System is fully operational and production-ready.
-
-Last Updated: $(date)
